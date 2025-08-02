@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  cosmos-website:
+    image: cosmos-jupiter:latest
+    container_name: cosmos-jupiter
+    ports:
+      - "85:85"
+    restart: unless-stopped
+    networks:
+      cosmos:
+        ipv4_address: 192.168.95.30
+    dns:
+      - 192.168.95.11
+
+networks:
+  cosmos:
+    external: true
+    ipam:
+      config:
+        - subnet: 192.168.95.0/24
+
