@@ -8,7 +8,6 @@
 
 ## 📦 Stack technique
 
-|----------|-------------|
 | [Vite](https://vitejs.dev/) | Frontend rapide pour SPA |
 | [Docker & Docker Desktop](https://www.docker.com/) | Conteneurisation |
 | [NGINX](https://nginx.org/) | Serveur HTTP pour fichiers statiques |
